@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-weight: 800;
+}
+html{
+    font-size: 62.5%;
+}
+:root{
+    --base-color:#1E213F;
+    --base-color2:#161932;
+    --button-color1:#F87070;
+    --text-color:#D7E0FF;
+    --base-color3:#FFFFFF;
+}
+.base-color{
+    background-color: var(--base-color);
+}
+.base-color2{
+    background-color: var(--base-color2);
+}
+.text-color{
+    color: var(--text-color) !important;
+}
+.Timer-Modes button{
+    
+    padding: 1.2rem;
+    border-radius: 25px;
+    font-size: 1.6rem;
+}
+.Timer-Modes button:focus{
+    color: #333 !important;
+   background-color: var(--button-color1) !important;
+}
+.Timer-Modes{
+    width: 25%;
+}
+.timer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+.pointer{
+    cursor: pointer;
+}
+.timer div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;          
+    height: 400px;
+    font-size: 120px;       
+    font-weight: bold;
+    color: var(--text-color, #333);
+    border: 20px solid var(--base-color2, #ff6b6b);
+    border-radius: 50%;    
+    box-shadow: 0 0 40px rgba(179, 177, 177, 0.2);
+    transition: all 0.3s ease;
+  }
+.timer p {
+    font-size: 20px;
+    color: var(--text-color);
+    letter-spacing: 20px;
+    margin-left: 2.5rem;
+  }
+  .settings i{
+    color: var(--text-color);
+    
+  }
+  .modal-body h3{
+    letter-spacing: 5px;
+  }
+  .modal-body {
+    background-color: var(--base-color3);
+  }
+  .col-xl-35 {
+    flex: 0 0 auto !important;
+    width: 30% !important;
+  }
+  .start:hover{
+    color: var(--button-color1);
+  }
+  .input-timer div input{
+    padding: 1.1rem;
+   
+    border-radius: 0.6rem;
+    border: 0;
+    background-color: var(--text-color);
+    
+  }
+  .input-timer div p{
+   font-size: 1.2rem;
+    
+  }
+  .applybutton{
+    position: relative;
+    top: 4rem;
+    font-size: 16px !important;
+    padding: 18px 48px !important;
+    background-color: var(--button-color1) !important;
+    font-weight: 900 !important;
+    color: var(--base-color3) !important;
+  }
+  @media (max-width: 1399.98px) {
+    .Timer-Modes {
+      width: 30%;
+    }
+  }
+  
+  /* تا 1199px */
+  @media (max-width: 1199.98px) {
+    .Timer-Modes {
+      width: 40%;
+    }
+  }
+  
+  /* تا 991px */
+  @media (max-width: 991.98px) {
+    .Timer-Modes {
+      width: 50%;
+    }
+  }
+  
+  /* تا 767px */
+  @media (max-width: 767.98px) {
+    .Timer-Modes {
+      width: 70%;
+    }
+  }
+  
+  /* تا 575px */
+  @media (max-width: 575.98px) {
+    .Timer-Modes {
+      width: 80%;
+    }
+  }
+  .Timer-Modes button.active {
+    background-color: var(--button-color1);
+    color:black;
+    border-radius: 50px;
+    transition: 0.3s;
+  }
